@@ -1,10 +1,10 @@
 import React from "react";
 import {Layout, Menu} from 'antd';
+import PropTypes from 'prop-types';
 
 const {Header, Content} = Layout;
 
 const AppLayout = props => {
-
     const {children} = props;
     return (
         <Layout className="layout">
@@ -25,6 +25,9 @@ const AppLayout = props => {
         </Layout>
 
     );
+};
+AppLayout.propTypes = {
+    options: PropTypes.node.isRequired
 };
 
 export default AppLayout;

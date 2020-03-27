@@ -1,5 +1,8 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 import {Radio} from 'antd';
+
 const RadioGroup = (props) => {
     const {options, optionValue, setOptionValue} = props;
     const radioStyle = {
@@ -29,5 +32,9 @@ const RadioGroup = (props) => {
     );
 
 };
-
+RadioGroup.propTypes = {
+    options: PropTypes.node.isRequired,
+    optionValue: PropTypes.any,
+    setOptionValue: PropTypes.func
+};
 export default RadioGroup;

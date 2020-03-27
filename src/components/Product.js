@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import PropTypes from 'prop-types';
+
 import {Card, Typography, Row, Col, Divider} from "antd";
 import RadioGroup from './radioGroup';
 
@@ -7,7 +9,6 @@ const {Text} = Typography;
 const Product = (props) => {
     const {options} = props;
     let [optionValue, setOptionValue] = useState('$120');
-    const style = { background: '#0092ff', padding: '8px 0' };
 
     return (
         <div>
@@ -35,6 +36,9 @@ const Product = (props) => {
 
         </div>
     );
+};
+Product.propTypes = {
+    options: PropTypes.array.isRequired
 };
 
 
