@@ -16,9 +16,9 @@ const Product = (props) => {
 
             </Divider>
             <Row gutter={16}>
-                <Col className="gutter-row" span={6}>
+                <Col className="gutter-row" span={1}>
                 </Col>
-                <Col className="gutter-row" span={12}>
+                <Col className="gutter-row" span={22}>
                     <Card title="Product tiers" bordered={false} style={{width: '100%'}}>
                         <RadioGroup options={options} optionValue={optionValue} setOptionValue={setOptionValue}/>
                         <p>Total Price</p>
@@ -28,7 +28,7 @@ const Product = (props) => {
                     </Card>
                 </Col>
 
-                <Col className="gutter-row" span={6}>
+                <Col className="gutter-row" span={1}>
                 </Col>
             </Row>
 
