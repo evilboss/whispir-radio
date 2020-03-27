@@ -2,16 +2,16 @@ import React from 'react';
 import './App.css';
 import "antd/dist/antd.css";
 import AppLayout from './AppLayout';
-import RadioGroup from './radioGroup';
+import Product from "./Product";
 
-function App() {
+const App = () => {
     const options = [{label: 'Standard Edition', value: '$120'}, {label: 'Enterprise Edition.', value: '$999'}];
 
     return (
         <AppLayout>
-            <RadioGroup options={options}/>
+            <Product options={options}/>
         </AppLayout>
     );
-}
+};
 
 export default App;
